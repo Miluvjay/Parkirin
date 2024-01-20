@@ -32,4 +32,9 @@ Parkirin juga menawarkan user untuk mendapatkan informasi langsung dari database
 [![VSCode](https://digimantralabs.com/wp-content/uploads/2018/08/visual-studio-code-logo.png)](https://code.visualstudio.com/Download)
 
 # Screenshot Aplikasi
-
+![alt text](https://github.com/Miluvjay/Parkirin/blob/main/public/menusistemparkir.png?raw=true)
+![alt text](https://github.com/Miluvjay/Parkirin/blob/main/public/loketmasukparkir.png?raw=true)
+![alt text](https://github.com/Miluvjay/Parkirin/blob/main/public/loketkeluarparkir.png?raw=true)
+![alt text](https://github.com/Miluvjay/Parkirin/blob/main/public/aplikasiwebsiteparkir.png?raw=true)
+![alt text](https://github.com/Miluvjay/Parkirin/blob/main/public/detailsappparkir.png?raw=true)
+![alt text](https://github.com/Miluvjay/Parkirin/blob/main/public/riwayatparkir.png?raw=true)
