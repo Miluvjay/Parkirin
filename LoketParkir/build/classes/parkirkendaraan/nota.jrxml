@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7a3ffdf7-05c4-4cf9-b842-f3e79e924951">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="260"/>
+	<parameter name="kode" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from parkirmasuk where noPlat = $P{kode}]]>
+	</queryString>
+	<field name="notiket" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggalmasuk" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="noplat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jeniskendaraan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jammasuk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jamkeluar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="biaya" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="174" y="19" width="200" height="42" uuid="1777740e-0d35-4216-970e-6624ec6d6ade"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[NOTA PARKIR]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="438" splitType="Stretch">
+			<textField>
+				<reportElement x="188" y="15" width="154" height="20" uuid="15a4cb0d-279b-4870-82c9-52e9420aef33"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{notiket}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="188" y="118" width="154" height="20" uuid="c636c93b-9ee5-4393-a8b7-64dd0d4f319d"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tanggalmasuk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="188" y="67" width="154" height="20" uuid="5270d77b-ac1c-4b27-ba82-290810b73e5d"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noplat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="188" y="167" width="154" height="20" uuid="1e598041-ccea-49f7-8b13-baf2a35042e7"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jeniskendaraan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="188" y="208" width="154" height="20" uuid="b6b737a5-d4d9-46f0-a94d-e0304582c50f"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jammasuk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="188" y="248" width="154" height="20" uuid="14bae386-71e5-42a1-8460-a625215ad54b"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jamkeluar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="354" width="76" height="20" uuid="bd7ce138-3478-42bf-9d42-bc06a2f7ddb1"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{biaya}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="25" y="15" width="81" height="32" uuid="d780adeb-020d-4f93-b6d3-c435cc737225"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[No Tiket]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="67" width="81" height="30" uuid="e2ba7601-333b-4ae3-94a7-9324ed3201bb"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[No Plat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="354" width="68" height="20" uuid="151b4cea-2b61-4758-9f27-9af3e9753fac"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Total : Rp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="118" width="119" height="31" uuid="3c328bba-2ab8-40b5-9144-9b3686a1a85b"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Tanggal Masuk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="167" width="119" height="20" uuid="3e3ca75c-9883-4324-98c9-d6adef1df742"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Jenis Kendaraan ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="208" width="92" height="20" uuid="955b3113-6826-40ed-b0c8-b48143a1551f"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Jam Masuk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="248" width="81" height="20" uuid="3849a760-67fe-4e57-a5e1-f14562904ab2"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Jam Keluar]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-18" y="0" width="588" height="1" uuid="3a607f70-a2b8-4830-bb3e-1539bafa400d"/>
+			</line>
+			<line>
+				<reportElement x="-18" y="0" width="588" height="1" uuid="3a607f70-a2b8-4830-bb3e-1539bafa400d"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
